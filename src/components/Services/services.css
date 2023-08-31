@@ -1,0 +1,31 @@
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: #fef5f0;
+    border: 2px solid #ffceb2;*/
+    border-radius: 29px;
+    padding: 15px;
+    height: 350px;
+}
+
+.services h2{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.services h3{
+    font-size: 20px;
+    color: #004f50;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+        
+    

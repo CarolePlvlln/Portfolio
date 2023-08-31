@@ -1,0 +1,59 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #003d3e, #004f50);
+    height: 90px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: middle;
+    padding-top: 25px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.navBar {
+    margin-bottom: auto;
+}
+
+
+.navBar li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navLink{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 27px;
+    margin-left: 30px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navLink:hover {
+    opacity: 1;
+}
+
+.navLink::before {
+    transition: 300ms;
+    height: 7px;
+    content: "";
+    position: absolute;
+    background-color: #d0c1b2;
+}
+
+.navLink-fade-up::before {
+    width: 100%;
+    bottom: -18px;
+    opacity: 0;
+}
+
+.navLink-fade-up:hover::before {
+    bottom: -10px;
+    opacity: 1;
+}
