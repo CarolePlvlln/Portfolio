@@ -1,0 +1,22 @@
+button {
+  border: #fbf1eb;
+  background-color: transparent;
+  font-family: "Tajawal", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fbf1eb;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button:hover {
+  background-color: #fbf1eb;
+  color: #097969;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
