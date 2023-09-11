@@ -1,12 +1,15 @@
 import React from "react";
-import home from "./home.css";
+import home from "./home.scss";
 import Services from "../../components/Services";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import Travaux from "../../components/Travaux";
+//import Modal from '../../components/Modal';
 import travauxList from "../../Data/travauxList.json";
 
 function Home() {
+  //const [isOpen, setIsOpen] = useState(false);
+
   return (
     <main className="home-container" style={home}>
       <section className="presentation-container">
@@ -14,11 +17,10 @@ function Home() {
         <div className="presentation">
           <h1>Carole Pelvillain</h1>
           <h2>
-            J'ai travaillé plusieurs années dans l'univers de la mode, notamment
-            en tant que professeure de modélisme et de DAO dans des écoles. Le
-            monde digital m'a toujours attiré. Curieuse et passionnée, j'ai
-            décidé de me former au développement Web pour allier mes
-            connaissances et mes compétences en arts visuel et digital web.
+            {`J'ai travaillé plusieurs années dans l'univers de la mode, notamment en tant que
+            professeure de modélisme et de DAO dans des écoles. Le monde digital m'a toujours
+            attiré. Curieuse et passionnée, j'ai décidé de me former au développement Web pour
+            allier mes connaissances et mes compétences en arts visuel et digital web.`}
           </h2>
           <div className="socialLinks">
             <img src={github} alt="github-icon" />
@@ -34,7 +36,7 @@ function Home() {
           <div className="services">
             <div className="services-collapse">
               <Services label="Developpement web">
-                <h3>Réalisation d'application web-front</h3>
+                <h3>{`Réalisation d'application web-front`}</h3>
                 <div className="descriptif-service">Bla bla bla</div>
                 <h3>Languages</h3>
                 <ul>

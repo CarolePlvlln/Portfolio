@@ -1,0 +1,54 @@
+$dark-green: #004f50;
+$medium-green: #097969;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  .modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    box-shadow: 8px 8px 10px rgba(0 0 0 / 0.7);
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    animation: fadein 0.8s;
+    z-index: 100;
+    border-radius: 10px;
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    h2,
+    h3 {
+      color: $dark-green;
+    }
+
+    button {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      z-index: 100;
+      color: $medium-green;
+      background-color: transparent;
+      border-radius: 5px;
+      border: 1px solid $medium-green;
+      margin-right: 0px;
+    }
+  }
+}

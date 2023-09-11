@@ -1,22 +1,20 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: ["plugin:react/recommended", "airbnb"],
-  overrides: [],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-  },
+  extends: [
+    "airbnb-base",
+    "plugin:eslint-plugin/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+  ],
   plugins: ["react"],
   rules: {
-    "arrow-parens": "off",
-    "consistent-return": "off",
+    "no-restricted-syntax": 0,
+    "react/no-unescaped-entities": 0,
+    "react/require-default-props": 0,
+    //"react/prop-types": 0,
+    //'react/prop-types': ['off'],
+    "react/no-unescaped-entities": "off",
+    "padded-blocks": ["error", "never"],
     "comma-dangle": "off",
-    "max-len": "off",
-    "generator-star-spacing": "off",
-    "no-unused-vars": "warn",
-    "no-console": ["warn", { allow: ["warn"] }],
   },
+  "linebreak-style": ["error", "windows"],
 };
