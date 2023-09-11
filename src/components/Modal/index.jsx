@@ -1,6 +1,6 @@
-/* eslint react/forbid-prop-types: 0 */
 import React from "react";
 import modal from "./modal.scss";
+import PropTypes from "prop-types";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,13 +11,17 @@ const Modal = ({ open, children, onClose }) => {
   return (
     <div className="overlay" style={modal}>
       <div className="modal">
-        <button onClick={onClose}>
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
+        <FontAwesomeIcon icon={faXmark} onClick={onClose} className="button" />
+
         <div className="img-text">{children}</div>
       </div>
     </div>
   );
 };
 
+Modal.propTypes = {
+  open: PropTypes.bool,
+  children: PropTypes.node,
+  onClose: PropTypes.func,
+};
 export default Modal;

@@ -1,6 +1,7 @@
 /* eslint react/forbid-prop-types: 0 */
 import React from "react";
 import "./services.scss";
+import PropTypes from "prop-types";
 
 function Services(props) {
   return (
@@ -8,10 +9,14 @@ function Services(props) {
       <div className="services-box">
         {/*On utilise les props pour afficher celui du label dans le fichier index.jsx logement(ou apropos).jsx*/}
         <h2>{props.label}</h2>
-        <p>{props.children}</p>
+        <div>{props.children}</div>
       </div>
     </section>
   );
 }
 
+Services.propTypes = {
+  label: PropTypes.string,
+  children: PropTypes.array,
+};
 export default Services;

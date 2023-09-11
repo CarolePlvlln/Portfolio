@@ -13,6 +13,7 @@ $medium-green: #097969;
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     top: 50%;
     left: 50%;
     width: 60%;
@@ -35,9 +36,10 @@ $medium-green: #097969;
     h2,
     h3 {
       color: $dark-green;
+      text-align: center;
     }
 
-    button {
+    .button {
       position: fixed;
       top: 15px;
       right: 15px;
@@ -46,9 +48,40 @@ $medium-green: #097969;
       z-index: 100;
       color: $medium-green;
       background-color: transparent;
-      border-radius: 5px;
-      border: 1px solid $medium-green;
       margin-right: 0px;
+    }
+
+    .tools ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-right: 10px;
+        border: 1px solid #d2e8e9;
+        background-color: #d2e8e9;
+        color: #004f50;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 10px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+
+    .pictures {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      img {
+        width: 350px;
+        height: auto;
+        border-radius: 5px;
+      }
     }
   }
 }

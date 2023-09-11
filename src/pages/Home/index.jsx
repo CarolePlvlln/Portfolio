@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import home from "./home.scss";
 import Services from "../../components/Services";
 import github from "../../assets/images/github.png";
@@ -9,6 +9,23 @@ import travauxList from "../../Data/travauxList.json";
 
 function Home() {
   //const [isOpen, setIsOpen] = useState(false);
+  const [works, setworks] = useState(travauxList);
+
+  const handleBtns = (e) => {
+    const workCategorie = e.target.value;
+    console.log(workCategorie);
+    const workList = travauxList;
+    //vérifier si catégorie du bouton est égale à "développement web"
+    if (workCategorie === "Développelement web") setworks(travauxList);
+    else {
+      //Filtre {catégorie} appliqué sur travauxList.json pour sélectionner catégorie travaux égale à catégorie bouton
+      const filteredWorks = workList.filter(({ categorie }) => {
+        return categorie.includes(workCategorie);
+      });
+      //travaux filtrés
+      setworks(filteredWorks);
+    }
+  };
 
   return (
     <main className="home-container" style={home}>
@@ -28,7 +45,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="services-section">
+      <section className="services-section" id="services">
         <div className="img-gradient-services"></div>
         <h1>Mes services</h1>
         {/*<div className="img-gradiant-services"></div>*/}
@@ -88,36 +105,60 @@ function Home() {
         <div className="img-gradient-services-bottom"></div>
       </section>
 
-      <section className="travaux">
+      <section className="travaux" id="travaux">
         <h1>Mes travaux</h1>
         <div className="filter">
           <button
-            id="WebDev"
-            className="btn-filter btn-filter-clicked"
-            autoFocus
+            onClick={handleBtns}
+            type="button"
+            value="Développelement web"
+            id="devWeb"
           >
             Développement Web
           </button>
-          <button id="Branding" className="btn-filter">
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Branding"
+            id="branding"
+          >
             Branding
           </button>
-          <button id="Graphisme" className="btn-filter">
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Graphisme"
+            id="graphisme"
+          >
             Graphisme & Illustration
           </button>
         </div>
         <div className="allWorks">
-          {travauxList.map(({ id, title, cover, categorie }) => (
-            <Travaux
-              id={id}
-              key={id}
-              title={title}
-              cover={cover}
-              categorie={categorie}
-            />
-          ))}
+          {works.map(
+            ({
+              id,
+              title,
+              cover,
+              categorie,
+              description,
+              pictures,
+              outils,
+            }) => (
+              <Travaux
+                id={id}
+                key={id}
+                title={title}
+                cover={cover}
+                categorie={categorie}
+                description={description}
+                pictures={pictures}
+                outils={outils}
+              />
+            )
+          )}
         </div>
       </section>
-      <section className="aPropos">
+      <section className="aPropos" id="aPropos">
         <div className="img-gradient-a-propos"></div>
         <h1>A propos</h1>
         <div className="list-about">
@@ -132,7 +173,7 @@ function Home() {
           </p>
         </div>
       </section>
-      <section className="contact">
+      <section className="contact" id="contact">
         <h1>Contact</h1>
         <div className="contactForm">
           <div className="nom-prenom">

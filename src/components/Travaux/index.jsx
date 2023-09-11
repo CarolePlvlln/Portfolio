@@ -8,7 +8,7 @@ import travauxList from "../../Data/travauxList.json";
 
 //import arrow_up from "../../assets/images/arrow_up.png";
 
-function Travaux({ title, cover, categorie, pictures, description }) {
+function Travaux({ title, cover, categorie, pictures, description, outils }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -20,20 +20,27 @@ function Travaux({ title, cover, categorie, pictures, description }) {
       <Modal className="modal" open={isOpen} onClose={() => setIsOpen(false)}>
         <h2>{title}</h2>
         <h3>{categorie}</h3>
-        {/*{pictures.map((picture) => {
-          return (
-            <img
-              src={picture}
-              key={picture}
-              alt="work pictures"
-              className="work-images"
-            >
-              {picture}
-            </img>
-          );
-        })}*/}
         <p>{description}</p>
-        Hello
+        <h3>Outils utilisés</h3>
+        <div className="tools">
+          <ul className="tools-list">
+            {outils.map((outil, index) => {
+              return <li key={index}>{outil}</li>;
+            })}
+          </ul>
+        </div>
+        <div className="pictures">
+          {pictures.map((picture, index) => {
+            return (
+              <img
+                src={picture}
+                key={"picture" + index}
+                alt="work pictures"
+                className="work-images"
+              />
+            );
+          })}
+        </div>
       </Modal>
     </div>
   );
@@ -46,6 +53,7 @@ Travaux.propTypes = {
   cover: PropTypes.string,
   description: PropTypes.string,
   pictures: PropTypes.array,
+  outils: PropTypes.array,
 };
 
 export default Travaux;

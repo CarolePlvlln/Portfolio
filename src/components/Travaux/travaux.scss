@@ -20,7 +20,7 @@
     font-weight: 700;
   }
 
-  img {
+  .img-portfolio {
     width: 600px;
     border-radius: 10px;
 
@@ -37,7 +37,7 @@
     display: none;
   }
 
-  img:hover + .title {
+  .img-portfolio:hover + .title {
     display: block;
     z-index: 2;
     position: absolute;
@@ -65,8 +65,8 @@
     font-weight: 700;
   }
 
-  .work-images {
-    width: 200px;
+  .pictures img {
+    width: 100px;
   }
   .modal p {
     color: black;

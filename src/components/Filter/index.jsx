@@ -4,13 +4,13 @@ import filter from "./filter.scss";
 import travauxList from "../../Data/travauxList.json";
 
 function Filter() {
-  const [works, setworks] = useState("developpelement web");
+  const [works, setworks] = useState("Développelement web");
 
   const handleBtns = (e) => {
     const workCategorie = e.target.value;
     const workList = travauxList;
     //vérifier si catégorie du bouton est égale à "développement web"
-    if (workCategorie === "developpelement web") setworks(works);
+    if (workCategorie === "Développelement web") setworks(works);
     else {
       //Filtre {catégorie} appliqué sur travauxList.json pour sélectionner catégorie travaux égale à catégorie bouton
       const filteredWorks = workList.filter(({ categorie }) => {
@@ -26,7 +26,7 @@ function Filter() {
       <button
         onClick={handleBtns}
         type="button"
-        value="developpelement web"
+        value="Développelement web"
         id="devWeb"
       >
         Développement Web

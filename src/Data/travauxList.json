@@ -4,18 +4,19 @@
     "title": "Kasa- Site de location immobilière",
     "cover": "./works/devWeb/kasa/kasa-banner.jpg",
     "categorie": "Développelement Web",
-    "description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+    "description": "Créer une application web pour Kasa, entreprise de location d’appartements entre particuliers.",
     "pictures": [
       "./works/devWeb/kasa/kasa-banner.jpg",
       "./works/devWeb/kasa/kasa-banner.jpg",
       "./works/devWeb/kasa/kasa-banner.jpg"
-    ]
+    ],
+    "outils": ["React Js", "Scss"]
   },
   {
-    "id": "c67ab8a7",
+    "id": "c67ab8a8",
     "title": "Oh My Tea-Marque de thé",
     "cover": "./works/branding/ohMyTea/mockup-pot.jpg",
-    "categorie": "Développelement Web",
+    "categorie": "Branding",
     "description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
     "pictures": [
       "./works//branding/ohMyTea/mood.jpg",
@@ -25,6 +26,7 @@
       "./works/devWeb/kasa/packaging.jpg",
       "./works/devWeb/kasa/packaginPotGris.jpg",
       "./works/devWeb/kasa/banner.jpg"
-    ]
+    ],
+    "outils": ["Procreate", "Photoshop", "Illustrator"]
   }
 ]

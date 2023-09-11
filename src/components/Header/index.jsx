@@ -21,44 +21,28 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <a
               to="Home/Services"
               className="navLink navLink-fade-up"
-              href="#"
-              data-parent="services-section"
+              href="#services"
             >
               Services
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="Home/Travaux"
-              className="navLink navLink-fade-up"
-              href="#"
-              data-parent="travaux"
-            >
+            <a className="navLink navLink-fade-up" href="#travaux">
               Travaux
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="Home/Apropos"
-              className="navLink navLink-fade-up"
-              href="#"
-              data-parent="aPropos"
-            >
+            <a className="navLink navLink-fade-up" href="#aPropos">
               A Propos
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="Home/Contact"
-              className="navLink navLink-fade-up"
-              href="#"
-              data-parent="contact"
-            >
+            <a className="navLink navLink-fade-up" href="#contact">
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
