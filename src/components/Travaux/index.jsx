@@ -1,14 +1,17 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import travaux from "./travaux.scss";
 import PropTypes from "prop-types";
 import Modal from "../Modal";
-//import { useNavigate } from "react-router-dom";
-import travauxList from "../../Data/travauxList.json";
 
-//import arrow_up from "../../assets/images/arrow_up.png";
-
-function Travaux({ title, cover, categorie, pictures, description, outils }) {
+function Travaux({
+  title,
+  cover,
+  categorie,
+  pictures,
+  description,
+  outils,
+  problematique,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,16 +21,20 @@ function Travaux({ title, cover, categorie, pictures, description, outils }) {
         <div className="title">{title}</div>
       </div>
       <Modal className="modal" open={isOpen} onClose={() => setIsOpen(false)}>
-        <h2>{title}</h2>
-        <h3>{categorie}</h3>
-        <p>{description}</p>
-        <h3>Outils utilisés</h3>
-        <div className="tools">
-          <ul className="tools-list">
-            {outils.map((outil, index) => {
-              return <li key={index}>{outil}</li>;
-            })}
-          </ul>
+        <div className="workInfo">
+          <h2>{title}</h2>
+          <h3>{categorie}</h3>
+          <p>{description}</p>
+          <h3>Problématiques</h3>
+          <p>{problematique}</p>
+          <h3>Outils utilisés</h3>
+          <div className="tools">
+            <ul className="tools-list">
+              {outils.map((outil, index) => {
+                return <li key={index}>{outil}</li>;
+              })}
+            </ul>
+          </div>
         </div>
         <div className="pictures">
           {pictures.map((picture, index) => {

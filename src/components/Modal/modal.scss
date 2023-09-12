@@ -3,25 +3,33 @@ $medium-green: #097969;
 
 .overlay {
   position: fixed;
+  display: "flex";
+  align-items: center;
+  justify-content: "center";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
+  overflow: auto;
+  &:hover {
+    cursor: default;
+  }
+
   .modal {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
     top: 50%;
     left: 50%;
-    width: 60%;
+    width: 70%;
     height: auto;
     background-color: white;
     box-shadow: 8px 8px 10px rgba(0 0 0 / 0.7);
     padding: 15px;
-    transform: translate(-50%, -50%);
+    margin-top: 250px;
+    transform: translate(-50%, -35%);
     animation: fadein 0.8s;
     z-index: 100;
     border-radius: 10px;
@@ -33,10 +41,20 @@ $medium-green: #097969;
         opacity: 1;
       }
     }
-    h2,
+    h2 {
+      color: $dark-green;
+      text-align: center;
+      font-size: 28px;
+    }
     h3 {
       color: $dark-green;
       text-align: center;
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+    p {
+      margin-top: 0px;
+      font-size: 18px;
     }
 
     .button {
@@ -49,6 +67,9 @@ $medium-green: #097969;
       color: $medium-green;
       background-color: transparent;
       margin-right: 0px;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .tools ul {
@@ -58,6 +79,7 @@ $medium-green: #097969;
       justify-content: center;
       margin-bottom: 0;
       padding: 0;
+      margin-top: 10px;
       li {
         list-style: none;
         margin-right: 10px;
@@ -66,19 +88,26 @@ $medium-green: #097969;
         color: #004f50;
         border-radius: 20px;
         padding: 10px;
-        margin-top: 10px;
-        font-weight: 400;
-        margin-bottom: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
       }
+    }
+
+    .workInfo {
+      padding-left: 60px;
+      padding-right: 60px;
     }
 
     .pictures {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      column-gap: 20px;
+      justify-content: center;
+      column-gap: 40px;
+      row-gap: 40px;
+      margin-top: 50px;
       img {
-        width: 350px;
+        width: 500px;
         height: auto;
         border-radius: 5px;
       }

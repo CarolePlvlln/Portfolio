@@ -1,31 +1,36 @@
 [
   {
-    "id": "c67ab8a7",
+    "id": "PDV202302",
     "title": "Kasa- Site de location immobilière",
     "cover": "./works/devWeb/kasa/kasa-banner.jpg",
-    "categorie": "Développelement Web",
+    "categorie": "Développement Web",
     "description": "Créer une application web pour Kasa, entreprise de location d’appartements entre particuliers.",
     "pictures": [
       "./works/devWeb/kasa/kasa-banner.jpg",
-      "./works/devWeb/kasa/kasa-banner.jpg",
-      "./works/devWeb/kasa/kasa-banner.jpg"
+      "./works/devWeb/kasa/apropos.jpg",
+      "./works/devWeb/kasa/logement.jpg",
+      "./works/devWeb/kasa/logementOpen.jpg",
+      "./works/devWeb/kasa/Erreur404.jpg",
+      "./works/devWeb/kasa/phone1.jpg",
+      "./works/devWeb/kasa/phone2.jpg"
     ],
-    "outils": ["React Js", "Scss"]
+    "outils": ["React Js", "Scss"],
+    "problematique": "Les contraintes rencontrées pour ce projets fut la maîtrise de la manipulation des composants avec les pages ainsin que la récupération de l'id dans l'url lorsque l'on clic sur un logement."
   },
   {
-    "id": "c67ab8a8",
+    "id": "PB202201",
     "title": "Oh My Tea-Marque de thé",
     "cover": "./works/branding/ohMyTea/mockup-pot.jpg",
     "categorie": "Branding",
-    "description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+    "description": "Création de l'identité graphique pour 'Oh My Tea', marque de thés. (projet fictif)",
     "pictures": [
-      "./works//branding/ohMyTea/mood.jpg",
-      "./works/devWeb/kasa/logo.jpg",
-      "./works/devWeb/kasa/pattern.jpg",
-      "./works/devWeb/kasa/businessCard.jpg",
-      "./works/devWeb/kasa/packaging.jpg",
-      "./works/devWeb/kasa/packaginPotGris.jpg",
-      "./works/devWeb/kasa/banner.jpg"
+      "./works/branding/ohMyTea/mood.jpg",
+      "./works/branding/ohMyTea/logo.jpg",
+      "./works/branding/ohMyTea/pattern.jpg",
+      "./works/branding/ohMyTea/businessCard.jpg",
+      "./works/branding/ohMyTea/packaging.jpg",
+      "./works/branding/ohMyTea/packagingPotGris.jpg",
+      "./works/branding/ohMyTea/mockup-pot.jpg"
     ],
     "outils": ["Procreate", "Photoshop", "Illustrator"]
   }

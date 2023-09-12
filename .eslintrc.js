@@ -10,8 +10,6 @@ module.exports = {
     "no-restricted-syntax": 0,
     "react/no-unescaped-entities": 0,
     "react/require-default-props": 0,
-    //"react/prop-types": 0,
-    //'react/prop-types': ['off'],
     "react/no-unescaped-entities": "off",
     "padded-blocks": ["error", "never"],
     "comma-dangle": "off",

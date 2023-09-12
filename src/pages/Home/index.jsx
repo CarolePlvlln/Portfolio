@@ -4,7 +4,6 @@ import Services from "../../components/Services";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import Travaux from "../../components/Travaux";
-//import Modal from '../../components/Modal';
 import travauxList from "../../Data/travauxList.json";
 
 function Home() {
@@ -16,7 +15,7 @@ function Home() {
     console.log(workCategorie);
     const workList = travauxList;
     //vérifier si catégorie du bouton est égale à "développement web"
-    if (workCategorie === "Développelement web") setworks(travauxList);
+    if (workCategorie === "All") setworks(travauxList);
     else {
       //Filtre {catégorie} appliqué sur travauxList.json pour sélectionner catégorie travaux égale à catégorie bouton
       const filteredWorks = workList.filter(({ categorie }) => {
@@ -108,10 +107,13 @@ function Home() {
       <section className="travaux" id="travaux">
         <h1>Mes travaux</h1>
         <div className="filter">
+          <button onClick={handleBtns} type="button" value="All" id="All">
+            Tous
+          </button>
           <button
             onClick={handleBtns}
             type="button"
-            value="Développelement web"
+            value="Développement Web"
             id="devWeb"
           >
             Développement Web
@@ -143,6 +145,7 @@ function Home() {
               description,
               pictures,
               outils,
+              problematique,
             }) => (
               <Travaux
                 id={id}
@@ -153,6 +156,7 @@ function Home() {
                 description={description}
                 pictures={pictures}
                 outils={outils}
+                problematique={problematique}
               />
             )
           )}
