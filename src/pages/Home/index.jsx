@@ -5,6 +5,8 @@ import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import Travaux from "../../components/Travaux";
 import travauxList from "../../Data/travauxList.json";
+import BtnCV from "../../components/DownloadCv";
+import Contact from "../../components/Contact";
 
 function Home() {
   //const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,7 @@ function Home() {
 
   return (
     <main className="home-container" style={home}>
-      <section className="presentation-container">
+      <section className="presentation-container" id="presentation">
         <div className="img-gradient"></div>
         <div className="presentation">
           <h1>Carole Pelvillain</h1>
@@ -98,7 +100,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <button className="downloadCV">Télécharger mon CV</button>
+          <BtnCV></BtnCV>
         </div>
 
         <div className="img-gradient-services-bottom"></div>
@@ -178,72 +180,74 @@ function Home() {
         </div>
       </section>
       <section className="contact" id="contact">
-        <h1>Contact</h1>
-        <div className="contactForm">
-          <div className="nom-prenom">
-            <div className="form-group form-name">
-              <label>Nom</label>
-              <input
-                className="form-control"
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Nom"
-              />
-            </div>
-            <div className="form-group form-name">
-              <label>Prénom</label>
-              <input
-                className="form-control"
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="Prénom"
-              />
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Adresse e-mail</label>
+        {/*<h1>Contact</h1>
+      {/*<h3>Me contacter par <a href="mailto:pelvillain.carole@live.fr">e-mail</a></h3>*/}
+        {/*<div className="contactForm">
+        <div className="nom-prenom">
+          <div className="form-group form-name">
+            <label>Nom</label>
             <input
               className="form-control"
               type="text"
-              id="email"
-              name="email"
-              placeholder="Email"
+              id="lastname"
+              name="lastname"
+              placeholder="Nom"
             />
           </div>
-          <div className="form-group">
-            <label>Sujet</label>
+          <div className="form-group form-name">
+            <label>Prénom</label>
             <input
               className="form-control"
               type="text"
-              id="subject"
-              name="subject"
-              placeholder="Sujet"
+              id="firstname"
+              name="firstname"
+              placeholder="Prénom"
             />
           </div>
-          <div className="form-group">
-            <label>Votre message</label>
-            <div className="messageBox">
-              <textarea
-                className="form-control"
-                id="message"
-                name="message"
-                placeholder="Votre message"
-              ></textarea>
-            </div>
-          </div>
-
-          <button
-            id="submit-message-form"
-            name="sendmail"
-            value="sendmail"
-            className="btn-submit"
-            type="submit"
-          >
-            Envoyer
-          </button>
         </div>
+        <div className="form-group">
+          <label>Adresse e-mail</label>
+          <input
+            className="form-control"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+        <div className="form-group">
+          <label>Sujet</label>
+          <input
+            className="form-control"
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Sujet"
+          />
+        </div>
+        <div className="form-group">
+          <label>Votre message</label>
+          <div className="messageBox">
+            <textarea
+              className="form-control"
+              id="message"
+              name="message"
+              placeholder="Votre message"
+            ></textarea>
+          </div>
+        </div>
+
+        <button
+          id="submit-message-form"
+          name="sendmail"
+          value="sendmail"
+          className="btn-submit"
+          type="submit"
+        >
+          Envoyer
+        </button>
+      </div>*/}
+        <Contact></Contact>
       </section>
     </main>
   );

@@ -66,9 +66,15 @@ $medium-green: #097969;
       z-index: 100;
       color: $medium-green;
       background-color: transparent;
+      border-radius: 5px;
+      padding: 3px;
       margin-right: 0px;
       &:hover {
         cursor: pointer;
+        color: white;
+        background-color: $medium-green;
+        border-radius: 5px;
+        padding: 3px;
       }
     }
 
@@ -106,10 +112,12 @@ $medium-green: #097969;
       column-gap: 40px;
       row-gap: 40px;
       margin-top: 50px;
+      margin-bottom: 50px;
       img {
         width: 500px;
         height: auto;
         border-radius: 5px;
+        box-shadow: 8px 8px 10px rgba(0 0 0 / 0.3);
       }
     }
   }

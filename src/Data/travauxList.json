@@ -15,7 +15,7 @@
       "./works/devWeb/kasa/phone2.jpg"
     ],
     "outils": ["React Js", "Scss"],
-    "problematique": "Les contraintes rencontrées pour ce projets fut la maîtrise de la manipulation des composants avec les pages ainsin que la récupération de l'id dans l'url lorsque l'on clic sur un logement."
+    "problematique": "Les contraintes rencontrées pour ce projet ont été la maîtrise de la manipulation des composants avec les pages ainsi que la récupération de l'id dans l'url lorsque l'on clique sur un logement."
   },
   {
     "id": "PDV202301",

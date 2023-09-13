@@ -11,14 +11,9 @@ function Header() {
       <div className="navBar">
         <ul>
           <li>
-            <NavLink
-              to="/"
-              className="navLink navLink-fade-up"
-              href="#"
-              data-parent="presentation"
-            >
+            <a to="/" className="navLink navLink-fade-up" href="#presentation">
               Accueil
-            </NavLink>
+            </a>
           </li>
           <li>
             <a
