@@ -10,6 +10,9 @@
   /*border: 3px solid #ffb76a;*/
   margin-top: 20px;
   box-shadow: 8px 8px 8px 5px #023b3d;
+  @media screen and (max-width: 650px) {
+    width: 95%;
+  }
 
   h3 {
     color: #ffffff;
@@ -23,7 +26,8 @@
   .img-portfolio {
     width: 600px;
     border-radius: 10px;
-
+    @media screen and (max-width: 650px) {
+    }
     &:hover {
       filter: brightness(0.1);
     }

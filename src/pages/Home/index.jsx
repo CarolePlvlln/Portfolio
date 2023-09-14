@@ -55,7 +55,10 @@ function Home() {
             <div className="services-collapse">
               <Services label="Developpement web">
                 <h3>{`Réalisation d'application web-front`}</h3>
-                <div className="descriptif-service">Bla bla bla</div>
+                <div className="descriptif-service">
+                  Optimiation de l'ergonomie et de la navigation de votre
+                  application web.
+                </div>
                 <h3>Languages</h3>
                 <ul>
                   <li>HTML</li>
@@ -70,7 +73,10 @@ function Home() {
               <div className="content">
                 <Services label="Branding">
                   <h3>Création de logo et charte graphique</h3>
-                  <div className="descriptif-service">Bla bla bla</div>
+                  <div className="descriptif-service">
+                    Accompagnent et confection d'une identité visuelle à l'image
+                    de votre entreprise
+                  </div>
                   <h3>Outils</h3>
                   <ul>
                     <li>Illustrator</li>
@@ -88,7 +94,10 @@ function Home() {
                   className="services-content"
                 >
                   <h3>Illustrations, écriture de scénarios</h3>
-                  <div className="descriptif-service">Bla bla bla</div>
+                  <div className="descriptif-service">
+                    Réalisation de brochure, affiche, illustration... destinés à
+                    un support web ou print.
+                  </div>
                   <h3>Outils</h3>
                   <ul>
                     <li>Illustrator</li>

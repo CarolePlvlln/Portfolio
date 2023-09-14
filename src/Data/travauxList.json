@@ -46,5 +46,19 @@
       "./works/branding/ohMyTea/mockup-pot.jpg"
     ],
     "outils": ["Procreate", "Photoshop", "Illustrator"]
+  },
+  {
+    "id": "PB202202",
+    "title": "Madame Pamplemousse",
+    "cover": "./works/branding/madamePamplemousse/banner.webp",
+    "categorie": "Branding",
+    "description": "Création de l'identité graphique pour 'Madame Pamplemousse', marque de Joaillerie Française. La marque souhaitais un logo répondant à ses valeurs : la féminité, l’élégance et le luxe. Il devait rappeler l’univers de la joaillerie mais également faire allusion au pamplemousse.",
+    "pictures": [
+      "./works/branding/madamePamplemousse/logo.webp",
+      "./works/branding/madamePamplemousse/mockup.webp",
+      "./works/branding/madamePamplemousse/packaging.webp",
+      "./works/branding/madamePamplemousse/website.webp"
+    ],
+    "outils": ["Procreate", "Photoshop", "Illustrator"]
   }
 ]
