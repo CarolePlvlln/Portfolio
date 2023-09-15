@@ -23,6 +23,14 @@ h1 {
   @media screen and (max-width: 950px) {
     font-size: 40px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 32px;
+  }
 }
 
 .presentation-container {
@@ -69,6 +77,9 @@ h1 {
     text-align: center;
     @media screen and (max-width: 950px) {
       font-size: 22px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
     }
   }
 
@@ -167,12 +178,19 @@ h1 {
         @media screen and (max-width: 850px) {
           width: 70%;
         }
+        @media screen and (max-width: 480px) {
+          width: 90%;
+          margin-bottom: 50px;
+        }
         .descriptif-service {
           text-align: center;
           font-size: 18px;
           font-weight: 500;
           color: #000000;
           margin-bottom: 20px;
+          @media screen and (max-width: 480px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -349,6 +367,9 @@ h1 {
   position: relative;
   z-index: 1;
   height: 600px;
+  @media screen and (max-width: 480px) {
+    height: 400px;
+  }
   h1 {
     color: $dark-green;
     margin-top: 30px;
@@ -357,31 +378,29 @@ h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     z-index: 2;
+    @media screen and (max-width: 480px) {
+      margin-top: 15px;
+    }
   }
   .list-about {
     z-index: 2;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     width: 40%;
     background-color: $light-beige;
-    margin-left: 30%;
-    margin-right: 30%;
     border-radius: 50px;
     padding-bottom: 30px;
     padding-top: 30px;
     @media screen and (max-width: 950px) {
       width: 70%;
-      margin-left: 15%;
-      margin-right: 15%;
       padding-left: 10px;
       padding-right: 10px;
     }
     @media screen and (max-width: 650px) {
       width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
       padding-left: 10px;
       padding-right: 10px;
     }
