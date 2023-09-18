@@ -12,7 +12,13 @@ const Modal = ({ open, children, onClose }) => {
     <div className="overlay" style={modal}>
       <div className="modal">
         <FontAwesomeIcon icon={faXmark} onClick={onClose} className="button" />
-        <div className="img-text">{children}</div>
+        <div
+          className="img-text"
+          itemScope
+          itemType="https://schema.org/ImageObject"
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

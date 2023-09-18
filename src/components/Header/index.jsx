@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import head from "./header.scss";
-import { useScroll } from "../UseScroll";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

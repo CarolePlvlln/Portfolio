@@ -16,11 +16,23 @@ function Travaux({
 
   return (
     <div className="works-modal">
-      <div className="works" onClick={() => setIsOpen(true)} style={travaux}>
+      <div
+        className="works"
+        itemScope
+        itemType="https://schema.org/ImageObject"
+        onClick={() => setIsOpen(true)}
+        style={travaux}
+      >
         <img className="img-portfolio" src={cover} alt="Work cover" />
         <div className="title">{title}</div>
       </div>
-      <Modal className="modal" open={isOpen} onClose={() => setIsOpen(false)}>
+      <Modal
+        className="modal"
+        itemScope
+        itemType="https://schema.org/ImageObject"
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+      >
         <div className="workInfo">
           <h2>{title}</h2>
           <h3>{categorie}</h3>
@@ -44,6 +56,7 @@ function Travaux({
                 key={"picture" + index}
                 alt="work pictures"
                 className="work-images"
+                itemProp="contentUrl"
               />
             );
           })}

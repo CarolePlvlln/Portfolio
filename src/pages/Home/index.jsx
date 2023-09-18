@@ -53,7 +53,7 @@ function Home() {
         <div className="services-button">
           <div className="services">
             <div className="services-collapse">
-              <Services label="Developpement web">
+              <Services label="Développement web">
                 <h3>{`Réalisation d'application web-front`}</h3>
                 <div className="descriptif-service">
                   Optimiation de l'ergonomie et de la navigation de votre
