@@ -10,7 +10,7 @@
   padding-right: 25px;
   padding-top: 5px;
   z-index: 1000;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     padding-right: 0px;
   }
 
@@ -24,7 +24,7 @@
   }
   .iconMenu {
     display: none;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 700px) {
       display: flex;
       justify-content: end;
       margin-right: 25px;
@@ -37,13 +37,14 @@
     }
   }
   .navBar {
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 700px) {
+      animation: fadein 0.8s;
       margin-bottom: 0px;
       margin-top: 0px;
       z-index: 2;
     }
     ul {
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 700px) {
         background: #004f50;
         padding: 10px;
         margin-top: 0px;
@@ -52,7 +53,7 @@
       }
     }
     li {
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 700px) {
         display: flex;
         flex-direction: column;
       }
@@ -66,7 +67,7 @@
       color: white;
       text-decoration: none;
 
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 700px) {
         display: flex;
         flex-direction: column;
         margin-left: 10px;
@@ -88,7 +89,7 @@
       content: "";
       position: absolute;
       background-color: #d0c1b2;
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 700px) {
         display: none;
       }
     }
@@ -106,7 +107,8 @@
 
 .navBarMain {
   display: block;
-  @media screen and (max-width: 650px) {
+
+  @media screen and (max-width: 700px) {
     display: none;
   }
   ul {
@@ -115,10 +117,12 @@
     list-style: none;
     text-decoration: none;
     column-gap: 15px;
+
+    margin-top: 8px;
   }
   .navLink {
     font-family: "Tajawal", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     position: relative;
     color: white;
     text-decoration: none;
@@ -133,18 +137,18 @@
   }
   .navLink::before {
     transition: 300ms;
-    height: 5px;
+    height: 3px;
     content: "";
     position: absolute;
-    background-color: #d0c1b2;
+    background-color: #ddd1c5;
   }
   .navLink-fade-up::before {
     width: 100%;
-    bottom: -15px;
+    bottom: -13px;
     opacity: 0;
   }
   .navLink-fade-up:hover::before {
-    bottom: -5px;
+    bottom: -3px;
     opacity: 1;
   }
 }

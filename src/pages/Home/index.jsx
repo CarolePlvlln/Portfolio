@@ -5,7 +5,7 @@ import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
 import Travaux from "../../components/Travaux";
 import travauxList from "../../Data/travauxList.json";
-import BtnCV from "../../components/DownloadCv";
+//import BtnCV from "../../components/DownloadCv";
 import Contact from "../../components/Contact";
 
 function Home() {
@@ -109,7 +109,12 @@ function Home() {
               </div>
             </div>
           </div>
-          <BtnCV></BtnCV>
+          <a
+            href="http://localhost:3000/works/branding/ohMyTea/banner.jpg"
+            className="downloadCV"
+          >
+            Télécharger mon CV
+          </a>
         </div>
 
         <div className="img-gradient-services-bottom"></div>

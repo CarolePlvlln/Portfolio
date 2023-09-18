@@ -113,6 +113,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -197,13 +198,6 @@ h1 {
   }
 }
 
-/*.services-collapse h2 {
-  font-size: 18px;
-  margin-top: 0;
-  font-weight: 600;
-  color: rgb(68, 130, 131);
-}*/
-
 .services ul {
   display: flex;
   flex-direction: row;
@@ -218,10 +212,44 @@ h1 {
     background-color: #d2e8e9;
     color: $dark-green;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     margin-top: 10px;
     font-weight: 700;
   }
+}
+
+.downloadCV {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #097969;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  width: 13%;
+  height: auto;
+  margin: 3.125rem auto 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 0;
+  transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 1450px) {
+    font-size: 16px;
+    width: auto;
+  }
+  @media screen and (max-width: 450px) {
+    margin-bottom: 15px;
+  }
+}
+
+.downloadCV:hover {
+  background-color: #d2e8e9;
+  color: #097969;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .img-gradient-services-bottom {
