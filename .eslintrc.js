@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    "airbnb-base",
     "plugin:eslint-plugin/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
@@ -13,6 +12,6 @@ module.exports = {
     "react/no-unescaped-entities": "off",
     "padded-blocks": ["error", "never"],
     "comma-dangle": "off",
+    "linebreak-style": ["error", "windows"],
   },
-  "linebreak-style": ["error", "windows"],
 };

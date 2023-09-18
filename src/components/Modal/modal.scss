@@ -14,22 +14,23 @@ $medium-green: #097969;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
-  overflow: auto;
   &:hover {
     cursor: default;
   }
 
   .modal {
     position: relative;
-    top: 50%;
+    top: 0%;
     left: 50%;
     width: 70%;
     height: auto;
+    max-height: calc(90vh - 90px);
+    overflow-y: auto;
     background-color: white;
     box-shadow: 8px 8px 10px rgba(0 0 0 / 0.7);
     padding: 15px;
-    margin-top: 250px;
-    transform: translate(-50%, -35%);
+    margin-top: 90px;
+    transform: translateX(-50%);
     animation: fadein 0.8s;
     z-index: 1000;
     border-radius: 10px;

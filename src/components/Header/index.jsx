@@ -14,9 +14,9 @@ const Header = () => {
       <div className="menu">
         <div
           className="iconMenu toogle"
-          onClick={() => setNavbarOpen((prev) => !prev)}
+          onClick={() => setNavbarOpen(!navbarOpen)}
         >
-          {navbarOpen ? (
+          {!navbarOpen ? (
             <FontAwesomeIcon
               className="iconsMenu bar"
               icon={faBars}
@@ -33,43 +33,47 @@ const Header = () => {
             />
           )}
         </div>
-        <div className="navBar">
-          <ul>
-            <li>
-              <a
-                to="/"
-                className="navLink navLink-fade-up"
-                href="#presentation"
-              >
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a
-                to="Home/Services"
-                className="navLink navLink-fade-up"
-                href="#services"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="navLink navLink-fade-up" href="#travaux">
-                Travaux
-              </a>
-            </li>
-            <li>
-              <a className="navLink navLink-fade-up" href="#aPropos">
-                A Propos
-              </a>
-            </li>
-            <li>
-              <a className="navLink navLink-fade-up" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        {navbarOpen ? (
+          <div className="navBar">
+            <ul>
+              <li>
+                <a
+                  to="/"
+                  className="navLink navLink-fade-up"
+                  href="#presentation"
+                >
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a
+                  to="Home/Services"
+                  className="navLink navLink-fade-up"
+                  href="#services"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a className="navLink navLink-fade-up" href="#travaux">
+                  Travaux
+                </a>
+              </li>
+              <li>
+                <a className="navLink navLink-fade-up" href="#aPropos">
+                  A Propos
+                </a>
+              </li>
+              <li>
+                <a className="navLink navLink-fade-up" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
