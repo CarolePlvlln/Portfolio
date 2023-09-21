@@ -1,5 +1,5 @@
 .works-modal {
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     display: flex;
     justify-content: center;
   }
@@ -10,15 +10,24 @@
   flex-direction: column;
   position: relative;
   width: 600px;
-  height: 600px;
-  width: fit-content;
+
   height: fit-content;
   border-radius: 20px;
   /*border: 3px solid #ffb76a;*/
   margin-top: 20px;
   box-shadow: 8px 8px 8px 5px #023b3d;
-  @media screen and (max-width: 650px) {
-    width: 95%;
+
+  @media screen and (max-width: 1250px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 1060px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 860px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 92%;
   }
 
   h3 {
@@ -33,7 +42,16 @@
   .img-portfolio {
     width: 600px;
     border-radius: 10px;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 1250px) {
+      width: 500px;
+    }
+    @media screen and (max-width: 1060px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 860px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 700px) {
       width: 100%;
     }
     &:hover {

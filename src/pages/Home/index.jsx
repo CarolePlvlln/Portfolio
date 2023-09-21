@@ -89,10 +89,7 @@ function Home() {
             </div>
             <div className="services-collapse">
               <div className="content">
-                <Services
-                  label="Graphisme-Illustration"
-                  className="services-content"
-                >
+                <Services label="Graphisme" className="services-content">
                   <h3>Illustrations, écriture de scénarios</h3>
                   <div className="descriptif-service">
                     Réalisation de brochure, affiche, illustration... destinés à

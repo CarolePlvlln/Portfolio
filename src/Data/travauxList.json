@@ -31,6 +31,20 @@
     "problematique": "Les difficultés rencontrées concernent l'adaptation du site aux différentes tailles d'écrans (ordinateur, tablette, smartphone) tout en respectant la maquette imposée."
   },
   {
+    "id": "PB202202",
+    "title": "Madame Pamplemousse",
+    "cover": "./works/branding/madamePamplemousse/banner.webp",
+    "categorie": "Branding",
+    "description": "Création de l'identité graphique pour 'Madame Pamplemousse', marque de Joaillerie Française. La marque souhaitais un logo répondant à ses valeurs : la féminité, l’élégance et le luxe. Il devait rappeler l’univers de la joaillerie mais également faire allusion au pamplemousse.",
+    "pictures": [
+      "./works/branding/madamePamplemousse/logo.webp",
+      "./works/branding/madamePamplemousse/mockup.webp",
+      "./works/branding/madamePamplemousse/packaging.webp",
+      "./works/branding/madamePamplemousse/website.webp"
+    ],
+    "outils": ["Procreate", "Photoshop", "Illustrator"]
+  },
+  {
     "id": "PB202201",
     "title": "Oh My Tea-Marque de thé",
     "cover": "./works/branding/ohMyTea/mockup-pot.webp",
@@ -48,17 +62,12 @@
     "outils": ["Procreate", "Photoshop", "Illustrator"]
   },
   {
-    "id": "PB202202",
-    "title": "Madame Pamplemousse",
-    "cover": "./works/branding/madamePamplemousse/banner.webp",
-    "categorie": "Branding",
-    "description": "Création de l'identité graphique pour 'Madame Pamplemousse', marque de Joaillerie Française. La marque souhaitais un logo répondant à ses valeurs : la féminité, l’élégance et le luxe. Il devait rappeler l’univers de la joaillerie mais également faire allusion au pamplemousse.",
-    "pictures": [
-      "./works/branding/madamePamplemousse/logo.webp",
-      "./works/branding/madamePamplemousse/mockup.webp",
-      "./works/branding/madamePamplemousse/packaging.webp",
-      "./works/branding/madamePamplemousse/website.webp"
-    ],
-    "outils": ["Procreate", "Photoshop", "Illustrator"]
+    "id": "PG202202",
+    "title": "Couverture de livre",
+    "cover": "./works/graphisme/livre/banner.jpg",
+    "categorie": "Graphisme",
+    "description": "Création de la première page de couverture 'Les Marins pêcheurs face aux Éoliennes en mer' - Livre de Michel Adrien.",
+    "pictures": ["./works/graphisme/livre/banner.jpg"],
+    "outils": ["Procreate", "Photoshop"]
   }
 ]
