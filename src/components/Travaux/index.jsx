@@ -57,6 +57,7 @@ function Travaux({
                 alt="work pictures"
                 className="work-images"
                 itemProp="contentUrl"
+                onClick={() => setIsOpen(true)}
               />
             );
           })}
