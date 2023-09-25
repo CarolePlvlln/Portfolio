@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageZoom from "react-image-zooom";
 import travaux from "./travaux.scss";
 import PropTypes from "prop-types";
 import Modal from "../Modal";
@@ -51,13 +52,13 @@ function Travaux({
         <div className="pictures">
           {pictures.map((picture, index) => {
             return (
-              <img
+              <ImageZoom
                 src={picture}
                 key={"picture" + index}
                 alt="work pictures"
                 className="work-images"
                 itemProp="contentUrl"
-                onClick={() => setIsOpen(true)}
+                zoom="200"
               />
             );
           })}

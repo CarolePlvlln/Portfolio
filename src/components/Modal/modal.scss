@@ -128,8 +128,13 @@ $medium-green: #097969;
         height: auto;
         border-radius: 5px;
         box-shadow: 8px 8px 10px rgba(0 0 0 / 0.3);
+        transition:
+          transform 0.4s ease-in-out,
+          opacity 0.4s ease-in-out;
         &:hover {
           cursor: pointer;
+          transform: scale(0.95);
+          opacity: 1;
         }
       }
     }
