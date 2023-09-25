@@ -9,7 +9,7 @@ const Modal = ({ open, children, onClose }) => {
   if (!open) return null;
 
   return (
-    <div className="overlay" style={modal}>
+    <div className="overlay" style={modal} onClick={onClose}>
       <div className="modal">
         <FontAwesomeIcon icon={faXmark} onClick={onClose} className="button" />
         <div
