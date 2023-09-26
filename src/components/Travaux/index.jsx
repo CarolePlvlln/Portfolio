@@ -76,6 +76,7 @@ Travaux.propTypes = {
   description: PropTypes.string,
   pictures: PropTypes.array,
   outils: PropTypes.array,
+  problematique: PropTypes.string,
 };
 
 export default Travaux;

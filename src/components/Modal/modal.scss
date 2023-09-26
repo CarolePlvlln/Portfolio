@@ -36,6 +36,10 @@ $medium-green: #097969;
     animation: fadein 0.8s;
     z-index: 1000;
     border-radius: 10px;
+    @media screen and (max-width: 1450px) {
+      top: 10%;
+    }
+
     @keyframes fadein {
       from {
         opacity: 0;
@@ -52,17 +56,26 @@ $medium-green: #097969;
       color: $dark-green;
       text-align: center;
       font-size: 28px;
+      @media screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
     }
     h3 {
       color: $dark-green;
       text-align: center;
       margin-bottom: 5px;
       font-size: 22px;
+      @media screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
     }
     p {
       margin-top: 0px;
       font-size: 18px;
       text-align: center;
+      @media screen and (max-width: 1000px) {
+        font-size: 16px;
+      }
     }
 
     .button {
