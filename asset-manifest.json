@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.40971734.css",
+    "main.css": "/Portfolio/static/css/main.b04a5d55.css",
     "main.js": "/Portfolio/static/js/main.990c9b2e.js",
     "static/js/787.48c2a5e9.chunk.js": "/Portfolio/static/js/787.48c2a5e9.chunk.js",
     "static/media/CV_Carole_Pelvillain.webp": "/Portfolio/static/media/CV_Carole_Pelvillain.dc5a5e63b9283ab23473.webp",
@@ -8,12 +8,12 @@
     "static/media/github.png": "/Portfolio/static/media/github.f11021803f68852df283.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/Portfolio/index.html",
-    "main.40971734.css.map": "/Portfolio/static/css/main.40971734.css.map",
+    "main.b04a5d55.css.map": "/Portfolio/static/css/main.b04a5d55.css.map",
     "main.990c9b2e.js.map": "/Portfolio/static/js/main.990c9b2e.js.map",
     "787.48c2a5e9.chunk.js.map": "/Portfolio/static/js/787.48c2a5e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40971734.css",
+    "static/css/main.b04a5d55.css",
     "static/js/main.990c9b2e.js"
   ]
 }
