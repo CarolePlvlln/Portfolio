@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.bc8604ac.css",
-    "main.js": "/Portfolio/static/js/main.9547d672.js",
+    "main.js": "/Portfolio/static/js/main.990c9b2e.js",
     "static/js/787.48c2a5e9.chunk.js": "/Portfolio/static/js/787.48c2a5e9.chunk.js",
     "static/media/CV_Carole_Pelvillain.webp": "/Portfolio/static/media/CV_Carole_Pelvillain.dc5a5e63b9283ab23473.webp",
     "static/media/logo.png": "/Portfolio/static/media/logo.682767b6357d22204088.png",
@@ -9,11 +9,11 @@
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/Portfolio/index.html",
     "main.bc8604ac.css.map": "/Portfolio/static/css/main.bc8604ac.css.map",
-    "main.9547d672.js.map": "/Portfolio/static/js/main.9547d672.js.map",
+    "main.990c9b2e.js.map": "/Portfolio/static/js/main.990c9b2e.js.map",
     "787.48c2a5e9.chunk.js.map": "/Portfolio/static/js/787.48c2a5e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc8604ac.css",
-    "static/js/main.9547d672.js"
+    "static/js/main.990c9b2e.js"
   ]
 }
