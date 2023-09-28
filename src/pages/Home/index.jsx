@@ -3,20 +3,19 @@ import home from "./home.scss";
 import Services from "../../components/Services";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
+import CV_Carole_Pelvillain from "../../assets/images/CV_Carole_Pelvillain.webp";
 import Travaux from "../../components/Travaux";
 import travauxList from "../../Data/travauxList.json";
-//import BtnCV from "../../components/DownloadCv";
 import Contact from "../../components/Contact";
 
 function Home() {
-  //const [isOpen, setIsOpen] = useState(false);
   const [works, setworks] = useState(travauxList);
 
   const handleBtns = (e) => {
     const workCategorie = e.target.value;
     console.log(workCategorie);
     const workList = travauxList;
-    //vérifier si catégorie du bouton est égale à "développement web"
+    //vérifier si catégorie du bouton est égale à "All"
     if (workCategorie === "All") setworks(travauxList);
     else {
       //Filtre {catégorie} appliqué sur travauxList.json pour sélectionner catégorie travaux égale à catégorie bouton
@@ -38,25 +37,28 @@ function Home() {
             {`J'ai travaillé plusieurs années dans l'univers de la mode, notamment en tant que
             professeure de modélisme et de DAO dans des écoles. Le monde digital m'a toujours
             attiré. Curieuse et passionnée, j'ai décidé de me former au développement Web pour
-            allier mes connaissances et mes compétences en arts visuel et digital web.`}
+            allier mes connaissances et mes compétences en arts visuels et digital web.`}
           </h2>
           <div className="socialLinks">
-            <img src={github} alt="github-icon" />
-            <img src={linkedin} alt="linkedin-icon" />
+            <a href="https://github.com/CarolePlvlln">
+              <img src={github} alt="github-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/carole-pelvillain/">
+              <img src={linkedin} alt="linkedin-icon" />
+            </a>
           </div>
         </div>
       </section>
       <section className="services-section" id="services">
         <div className="img-gradient-services"></div>
         <h1>Mes services</h1>
-        {/*<div className="img-gradiant-services"></div>*/}
         <div className="services-button">
           <div className="services">
             <div className="services-collapse">
               <Services label="Développement web">
-                <h3>{`Réalisation d'application web-front`}</h3>
+                <h3>{`Réalisation d'applications web-front`}</h3>
                 <div className="descriptif-service">
-                  Optimiation de l'ergonomie et de la navigation de votre
+                  Optimisation de l'ergonomie et de la navigation de votre
                   application web.
                 </div>
                 <h3>Languages</h3>
@@ -74,8 +76,8 @@ function Home() {
                 <Services label="Branding">
                   <h3>Création de logo et charte graphique</h3>
                   <div className="descriptif-service">
-                    Accompagnent et confection d'une identité visuelle à l'image
-                    de votre entreprise
+                    Accompagnement et confection d'une identité visuelle à
+                    l'image de votre entreprise
                   </div>
                   <h3>Outils</h3>
                   <ul>
@@ -92,8 +94,8 @@ function Home() {
                 <Services label="Graphisme" className="services-content">
                   <h3>Illustrations, écriture de scénarios</h3>
                   <div className="descriptif-service">
-                    Réalisation de brochure, affiche, illustration... destinés à
-                    un support web ou print.
+                    Réalisation de brochures, affiches, illustrations...
+                    destinées à un support web ou print.
                   </div>
                   <h3>Outils</h3>
                   <ul>
@@ -106,10 +108,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <a
-            href="http://localhost:3000/works/branding/ohMyTea/banner.jpg"
-            className="downloadCV"
-          >
+          <a href={CV_Carole_Pelvillain} className="downloadCV">
             Télécharger mon CV
           </a>
         </div>
@@ -191,73 +190,6 @@ function Home() {
         </div>
       </section>
       <section className="contact" id="contact">
-        {/*<h1>Contact</h1>
-      {/*<h3>Me contacter par <a href="mailto:pelvillain.carole@live.fr">e-mail</a></h3>*/}
-        {/*<div className="contactForm">
-        <div className="nom-prenom">
-          <div className="form-group form-name">
-            <label>Nom</label>
-            <input
-              className="form-control"
-              type="text"
-              id="lastname"
-              name="lastname"
-              placeholder="Nom"
-            />
-          </div>
-          <div className="form-group form-name">
-            <label>Prénom</label>
-            <input
-              className="form-control"
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Prénom"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label>Adresse e-mail</label>
-          <input
-            className="form-control"
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Email"
-          />
-        </div>
-        <div className="form-group">
-          <label>Sujet</label>
-          <input
-            className="form-control"
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Sujet"
-          />
-        </div>
-        <div className="form-group">
-          <label>Votre message</label>
-          <div className="messageBox">
-            <textarea
-              className="form-control"
-              id="message"
-              name="message"
-              placeholder="Votre message"
-            ></textarea>
-          </div>
-        </div>
-
-        <button
-          id="submit-message-form"
-          name="sendmail"
-          value="sendmail"
-          className="btn-submit"
-          type="submit"
-        >
-          Envoyer
-        </button>
-      </div>*/}
         <Contact></Contact>
       </section>
     </main>

@@ -6,7 +6,8 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    // Evite que la page soit rechagé quand c'est renvoyé.
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -16,11 +17,11 @@ const Contact = () => {
         "G_tlkfWEajv4-PASN"
       )
       .then(
-        (result) => {
+        () => {
           // Message bien envoyé
           "Votre message a été envoyé";
         },
-        (error) => {
+        () => {
           // Erreur
           "Votre message n'a pas pu être envoyé";
         }
@@ -30,7 +31,6 @@ const Contact = () => {
   return (
     <div className="form" style={contact}>
       <h1>Contact</h1>
-      {/*<h3>Me contacter par <a href="mailto:pelvillain.carole@live.fr">e-mail</a></h3>*/}
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <div className="nom-prenom">
           <div className="form-group">
@@ -50,7 +50,7 @@ const Contact = () => {
               type="text"
               id="prenom"
               name="from_lastname"
-              placeholder="from_lastname"
+              placeholder="Prénom"
             />
           </div>
         </div>

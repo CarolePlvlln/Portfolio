@@ -313,7 +313,7 @@ h1 {
   background-color: $medium-green;
   z-index: 2;
   position: relative;
-  column-gap: auto;
+  column-gap: 5px;
   @media screen and (max-width: 950px) {
     width: 90%;
     border-radius: 30px;

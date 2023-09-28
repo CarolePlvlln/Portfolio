@@ -2,17 +2,17 @@
   {
     "id": "PDV202302",
     "title": "Kasa- Site de location immobilière",
-    "cover": "./works/devWeb/kasa/kasa-banner.webp",
+    "cover": "works/devWeb/kasa/kasa-banner.webp",
     "categorie": "Développement Web",
     "description": "Créer une application web pour Kasa, entreprise de location d’appartements entre particuliers. (Projet fictif)",
     "pictures": [
-      "./works/devWeb/kasa/kasa-banner.webp",
-      "./works/devWeb/kasa/apropos.webp",
-      "./works/devWeb/kasa/logement.webp",
-      "./works/devWeb/kasa/logementOpen.webp",
-      "./works/devWeb/kasa/Erreur404.webp",
-      "./works/devWeb/kasa/phone1.webp",
-      "./works/devWeb/kasa/phone2.webp"
+      "works/devWeb/kasa/kasa-banner.webp",
+      "works/devWeb/kasa/apropos.webp",
+      "works/devWeb/kasa/logement.webp",
+      "works/devWeb/kasa/logementOpen.webp",
+      "works/devWeb/kasa/Erreur404.webp",
+      "works/devWeb/kasa/phone1.webp",
+      "works/devWeb/kasa/phone2.webp"
     ],
     "outils": ["React Js", "Scss"],
     "problematique": "Les contraintes rencontrées pour ce projet ont été la maîtrise de la manipulation des composants avec les pages ainsi que la récupération de l'id dans l'url lorsque l'on clique sur un logement."
@@ -20,12 +20,12 @@
   {
     "id": "PDV202301",
     "title": "Booki- Agence de voyage",
-    "cover": "./works/devWeb/booki/booki-banner.webp",
+    "cover": "works/devWeb/booki/booki-banner.webp",
     "categorie": "Développement Web",
     "description": "Développer un site internet pour Booki, agence de voyage proposant aux usagers des hébergements ainsi que des activités dans la destination de leur choix. (Projet fictif)",
     "pictures": [
-      "./works/devWeb/booki/main.webp",
-      "./works/devWeb/booki/tablettePhone.webp"
+      "works/devWeb/booki/main.webp",
+      "works/devWeb/booki/tablettePhone.webp"
     ],
     "outils": ["HTML", "CSS"],
     "problematique": "Les difficultés rencontrées concernent l'adaptation du site aux différentes tailles d'écrans (ordinateur, tablette, smartphone) tout en respectant la maquette imposée."
@@ -33,55 +33,55 @@
   {
     "id": "PB202202",
     "title": "Madame Pamplemousse",
-    "cover": "./works/branding/madamePamplemousse/banner.webp",
+    "cover": "works/branding/madamePamplemousse/banner.webp",
     "categorie": "Branding",
     "description": "Création de l'identité graphique pour 'Madame Pamplemousse', marque de Joaillerie Française. La marque souhaitais un logo répondant à ses valeurs : la féminité, l’élégance et le luxe. Il devait rappeler l’univers de la joaillerie mais également faire allusion au pamplemousse. Lien vers le site internet : https://www.madamepamplemousse.com/en/home/",
     "pictures": [
-      "./works/branding/madamePamplemousse/logo.webp",
-      "./works/branding/madamePamplemousse/mockup.webp",
-      "./works/branding/madamePamplemousse/packaging.webp",
-      "./works/branding/madamePamplemousse/website.webp"
+      "works/branding/madamePamplemousse/logo.webp",
+      "works/branding/madamePamplemousse/mockup.webp",
+      "works/branding/madamePamplemousse/packaging.webp",
+      "works/branding/madamePamplemousse/website.webp"
     ],
     "outils": ["Procreate", "Photoshop", "Illustrator"]
   },
   {
     "id": "PB202203",
     "title": "Sea Crab House",
-    "cover": "./works/branding/seaCrabHouse/banner.jpg",
+    "cover": "works/branding/seaCrabHouse/Banner.jpg",
     "categorie": "Branding",
     "description": "Création de l'identité visuelle pour 'Sea Crab House', restaurant de fruits de mer à Bend, créée par Patta, Thailandaise venue vivre aux États-unis. Patta souhaitait un logo avec un crabe, un lotus et avec les couleur rouge, bleu et doré (et/ou blanc). Elle désirait un logo élégant. Après plusieurs recherche elle décida de se diriger vers un crabe plus stylisé, avec des yeux et une bouche pour le rendre sympathique afin de correspondre d'avantage à l'esprit familial du restaurant. Lien du site internet : https://seacrabhouse.com/",
     "pictures": [
-      "./works/branding/seaCrabHouse/banner.jpg",
-      "./works/branding/seaCrabHouse/research.jpg",
-      "./works/branding/seaCrabHouse/sch1.jpg",
-      "./works/branding/seaCrabHouse/sch2.jpg",
-      "./works/branding/seaCrabHouse/sch3.jpg",
-      "./works/branding/seaCrabHouse/sch4.jpg",
-      "./works/branding/seaCrabHouse/socialmedia.jpg"
+      "works/branding/seaCrabHouse/Banner.jpg",
+      "works/branding/seaCrabHouse/research.jpg",
+      "works/branding/seaCrabHouse/sch1.jpg",
+      "works/branding/seaCrabHouse/sch2.jpg",
+      "works/branding/seaCrabHouse/sch3.jpg",
+      "works/branding/seaCrabHouse/sch4.jpg",
+      "works/branding/seaCrabHouse/socialmedia.jpg"
     ],
     "outils": ["Procreate", "Photoshop", "Illustrator"]
   },
   {
     "id": "PB202201",
     "title": "Oh My Tea-Marque de thé",
-    "cover": "./works/branding/ohMyTea/mockup-pot.webp",
+    "cover": "works/branding/ohMyTea/mockup-pot.webp",
     "categorie": "Branding",
     "description": "Création de l'identité graphique pour 'Oh My Tea', marque de thés. (projet fictif)",
     "pictures": [
-      "./works/branding/ohMyTea/mood.webp",
-      "./works/branding/ohMyTea/logo.webp",
-      "./works/branding/ohMyTea/pattern.webp",
-      "./works/branding/ohMyTea/businessCard.webp",
-      "./works/branding/ohMyTea/packaging.webp",
-      "./works/branding/ohMyTea/packagingPotGris.webp",
-      "./works/branding/ohMyTea/mockup-pot.webp"
+      "works/branding/ohMyTea/mood.webp",
+      "works/branding/ohMyTea/logo.webp",
+      "works/branding/ohMyTea/pattern.webp",
+      "works/branding/ohMyTea/businessCard.webp",
+      "works/branding/ohMyTea/packaging.webp",
+      "works/branding/ohMyTea/packagingPotGris.webp",
+      "works/branding/ohMyTea/mockup-pot.webp"
     ],
     "outils": ["Procreate", "Photoshop", "Illustrator"]
   },
   {
     "id": "PG202202",
     "title": "Couverture de livre",
-    "cover": "./works/graphisme/livre/banner.jpg",
+    "cover": "works/graphisme/livre/banner.jpg",
     "categorie": "Graphisme",
     "description": "Création de la première page de couverture 'Les Marins pêcheurs face aux Éoliennes en mer' - Livre de Michel Adrien. Lien vers le livre : https://www.michel-adrien.com/pages/les-marins-pecheurs-face-aux-eoliennes-en-mer",
     "pictures": ["./works/graphisme/livre/banner.jpg"],

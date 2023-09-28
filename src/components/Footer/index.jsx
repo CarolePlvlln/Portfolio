@@ -15,7 +15,7 @@ function Footer() {
       </div>
       <div className="contactInfo">
         <span itemProp="name">Carole Pelvillain,</span>
-        <span itemProp="jobTitle"> Développeur web à Nantes</span>
+        <span itemProp="jobTitle"> Développeuse web à Nantes</span>
       </div>
     </div>
   );
